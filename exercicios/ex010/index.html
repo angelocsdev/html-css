@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="monoculo.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p><!--A tag "a" é usada para criar links. O parâmetro "href" é onde se deve colocar o link. O parâmetro "target" com o valor "_blank" é usada para que o link externo seja aberto em uma nova guia. O parâmetro "rel" é para dar referência a algo e o valor "external" é para dizer ao navegador que o link é externo.-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">Segunda página</a></p><!--Para usar links internos o valor dentro do parâmetro "href" deve estar na mesma página geral do documento. Ps: funciona também com pastas dentro da pasta principal selecionando corretamente com o atalho "CTRL + ESPAÇO".
+    Ps: deve selecionar o caminho corretamente caso o link esteja dentro de outra pasta na pasta principal.
+    O valor "next" do parâmetro "rel" indica ao navegador que a próxima página é de fato a próxima..-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="self">página de notícias</a></p><!--Use o valor "self" no parâmetro "target" para indicar que a a página deve ser aberta na mesma guia ou não digite nada.-->
+    <h1>Links para downloads</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="Ligações em toda parte.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/10 - Ligações em toda parte.rar" download="10 - Ligações em toda parte.rar" type="application/rar">Baixar livro em RAR</a></li><!--Para fazer o download assim que clicar no link use o parâmetro "download" + o nome do arquivo  e use o parâmetro "type" com o valor do tipo de mídia correspondente. Ex: PDF -> "application/pdf" ou html -> "text/html"-->
+        <!--Revisar os tipos de mídia no livro 10 em pdf do curso de html e css ou acessar o site de mídias.-->
+        <!--Site para pesquisar os parâmetros para os tipos de mídias "https://www.iana.org/assignments/media-types/media-types.xhtml"-->
+    </ul>
+</body>
+</html>

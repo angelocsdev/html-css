@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/foto-m.png" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture><!--A tag "picture" permite que sejam criadas várias fontes de imagens.-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"><!--A tag "source" serve para dizer qual imagem deve ser carregada com base no tamanho mínimo ou máximo da página.-->
+        <!--Ps: As imagens devem ser colocadas em ordem. Exemplo: Pequeno, Médio e Grande.-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay loop></audio><!--A tag "audio" serve para adicionar áudios ao site. O parâmetro "controls" é para colocar um botão de play e pause para o áudio e o parâmetro "autoplay" é para que a música toque automaticamente.-->
+    <!--Arquivos geralmente suportados: MP3 WAV OGG-->
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="" type="">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a></p><!--Outra forma de colocar um áudio no site é usando aninhada a tag "audio" a tag "source" com parâmetro "src" e "type". Dentro da tag "audio" tem a opção de colocar o parâmetro "preload" com os valores "auto" para tocar a música automaticamente "metadata" para mostrar apenas os dados da música e "none" para não carregar nada. Pode colocar também os parâmetros "autoplay" para se unir ao preload="auto", "controls para por os controles de play do áudio no site e "loop" para repetir a música em loop quando ela acabar.-->
+    </audio>
+</body>
+</html>

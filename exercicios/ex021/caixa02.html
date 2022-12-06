@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+            margin: 0;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            box-shadow: 10px 10px 10px 10px;
+        }/*inset é usado para fazer sombras internas*/
+        nav {
+            background-color: rgb(44, 44, 44);
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 3px 7px 3px black;/*O primeiro valor é o sombreamento horizontal, o segundo é vertical, o terceirão é o desvanecimento e o último é o tamanho da sombra*/
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 100px 0px 100px 0px;/*"border-radius" é usado para arredondar caixas.*/
+        }
+        article {
+            background-color: aliceblue;
+        }
+        article > aside {
+            background-color: antiquewhite;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header><!--"header" é uma tag que significa "cabeçalho"-->
+        <h1>Meu Site</h1>
+        <nav><!--"nav" significa navegação-->
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+        </nav>
+    </header>
+    <main><!--"main" é usado para o conteúdo principal-->
+        <section id="assuntos"><!--"section" são seções-->
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article><!--"article" é artigo-->
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, natus. Exercitationem, laborum. Repellendus iure unde accusantium expedita, sequi vero alias ipsa et, qui iste ut eaque enim necessitatibus saepe consectetur.</p>
+                <aside><!--"aside" é quando algo é colocado a parte do artigo-->
+                    <p>Artigo escrito por Pablito Neves</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer><!--"footer" significa rodapé-->
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+    <div id="bola"></div>
+    <div id="bola"></div>
+    <div id="bola"></div>
+    <div id="bola"></div>
+</body>
+</html>

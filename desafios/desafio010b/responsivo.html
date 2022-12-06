@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;
+        }/*Uma forma de deixar o conteúdo do site responsivo é criar um tamanho mínimo "min-width" e um máximo "max-width" com a "margin: auto".*/
+
+        img {
+            width: 100%;
+        }/*Para deixar uma imagem responsiva é só colocar o "width" em 100% e assim a imagem vai se adaptar junto com o conteúdo.*/
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit, similique rerum nostrum vitae optio quasi neque asperiores distinctio dignissimos ipsa sapiente! Maxime provident quae sed repellat vero, sunt officia! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, quidem magnam placeat cum ratione voluptates consectetur accusamus quia officiis doloribus eius molestias velit sapiente ipsam beatae ullam laborum repellat et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia quod id dolorum quas corporis blanditiis obcaecati qui, quasi nulla illo libero quaerat, magnam repellat autem aperiam hic explicabo! Doloribus!</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens\irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit, similique rerum nostrum vitae optio quasi neque asperiores distinctio dignissimos ipsa sapiente! Maxime provident quae sed repellat vero, sunt officia! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, quidem magnam placeat cum ratione voluptates consectetur accusamus quia officiis doloribus eius molestias velit sapiente ipsam beatae ullam laborum repellat et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia quod id dolorum quas corporis blanditiis obcaecati qui, quasi nulla illo libero quaerat, magnam repellat autem aperiam hic explicabo! Doloribus!</p>
+    </main>
+</body>
+</html>
