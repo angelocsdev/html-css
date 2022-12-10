@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;/*usado para juntar as bordas, como nas tabelas por exemplo. O outro valor "separate" separa as bordas.*/
+            border: 5px solid yellow;
+        }
+
+        tr.linha {
+            background-color: aqua;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.dado {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <!--
+            Hierarquia de tabelas (simples)
+            Table = Tabela
+                Table row = Linha de tabela
+                    Table Header = Cabeçalho de tabela
+                    Table Data = Dados de tabela
+        -->
+        <tr><!--Primeira linha-->
+            <td>A1</td><!--Primeiro dado-->
+            <td>B1</td><!--Segundo dado-->
+            <td>C1</td><!--Terceiro dado-->
+        </tr>
+        <tr class="linha"><!--Segunda linha-->
+            <td>A2</td><!--Primeiro dado-->
+            <td>B2</td><!--Segundo dado-->
+            <td>C2</td><!--Terceiro dado-->
+        </tr>
+        <tr><!--Terceira linha-->
+            <td>A3</td><!--Primeiro dado-->
+            <td class="dado">B3</td><!--Segundo dado-->
+            <td>C3</td><!--Terceiro dado-->
+        </tr>
+        <tr class="linha"><!--Quarta linha-->
+            <td>A4</td><!--Primeiro dado-->
+            <td>B4</td><!--Segundo dado-->
+            <td>C4</td><!--Terceiro dado-->
+        </tr>
+    </table>
+</body>
+</html>
