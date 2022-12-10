@@ -12,21 +12,20 @@
 
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse;/*usado para juntar as bordas, como nas tabelas por exemplo. O outro valor "separate" separa as bordas.*/
-            border: 5px solid yellow;
-        }
-
-        tr.linha {
-            background-color: aqua;
+            
         }
 
         td {
             border: 1px solid black;
             padding: 10px;
+            text-align: center;/*Alinhamento horizontal - > left center e right*/
+            vertical-align: middle;/*O alinhamento vertical pode ser feito com 'top' 'middle' e 'bottom'*/
         }
 
-        td.dado {
-            background-color: pink;
+        .numero {
+            text-align: right;
         }
     </style>
 </head>
@@ -45,17 +44,17 @@
             <td>B1</td><!--Segundo dado-->
             <td>C1</td><!--Terceiro dado-->
         </tr>
-        <tr class="linha"><!--Segunda linha-->
+        <tr><!--Segunda linha-->
             <td>A2</td><!--Primeiro dado-->
             <td>B2</td><!--Segundo dado-->
-            <td>C2</td><!--Terceiro dado-->
+            <td class="numero">C2</td><!--Terceiro dado-->
         </tr>
         <tr><!--Terceira linha-->
             <td>A3</td><!--Primeiro dado-->
-            <td class="dado">B3</td><!--Segundo dado-->
-            <td>C3</td><!--Terceiro dado-->
+            <td>B3</td><!--Segundo dado-->
+            <td class="numero">C3</td><!--Terceiro dado-->
         </tr>
-        <tr class="linha"><!--Quarta linha-->
+        <tr><!--Quarta linha-->
             <td>A4</td><!--Primeiro dado-->
             <td>B4</td><!--Segundo dado-->
             <td>C4</td><!--Terceiro dado-->
