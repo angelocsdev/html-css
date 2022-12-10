@@ -31,12 +31,8 @@
             background-color: aqua;
         }
 
-        .sexo {
+        .grupo {
             background-color: blueviolet;
-        }
-
-        .idade {
-            background-color: deeppink;
         }
 
         .profissao {
@@ -50,10 +46,9 @@
     <table>
         <colgroup>
             <col class="nome">
-            <col class="sexo">
-            <col class="idade">
+            <col class="grupo" span="2"><!--span é usado para indicar o número de colunas que terá a mesma classe.-->
             <col class="profissao">
-        </colgroup><!--colgroup é a tag usada para selecionar uma coluna inteira de uma vez e col é para cada coluna que o arquivo possuir.-->
+        </colgroup>
         <Caption>Cadastro</Caption>
         <tr>
             <th scope="col">Nome</th>
