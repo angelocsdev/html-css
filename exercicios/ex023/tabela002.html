@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +20,15 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border-bottom: 1px solid white;
+        }
+
         td.num {
             text-align: right;
         }
@@ -27,6 +36,9 @@
         th {
             background-color: black;
             color: white;
+        }
+        .right {
+            border-right: 1px solid white;
         }
 
         .foot {
@@ -40,6 +52,7 @@
     <!--
         Anatomia para tabelas grandes
         Table
+            Caption -> legenda da tabela
             Thead
                 Tr, Td, Th
             Tbody
@@ -48,10 +61,11 @@
                 Tr, Td, Th
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" class="right">Estado</th>
+                <th scope="col">População</th><!--scope -> col é usado quando os elementos estão na mesma coluna. Vertical.-->
             </tr>
         </thead>
         <tbody>
@@ -166,7 +180,7 @@
         </tbody>
         <tfoot>
             <tr class="foot">
-                <th>Total de habitantes</th>
+                <th scope="row" class="right">Total de habitantes</th><!--scope -> row é usado quando os elementos estão na mesma linha. Horizontal.-->
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
