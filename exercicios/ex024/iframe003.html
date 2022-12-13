@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de iframes</title>
+    <link rel="shortcut icon" href="imagens/icon.ico" type="image/x-icon">
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +29,9 @@
         <li><a href="paginas-extras/pagina003.html" target="frame">Terceira página</a></li>
     </ul>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, soluta. Sequi laborum qui est. Ratione quo fugit minima? Repellat similique voluptate laudantium ratione qui blanditiis harum reprehenderit dolore amet. Voluptate!</p>
-    <iframe name="frame" src=""><!--O name é para nomear o iframe para colocar dentro de 'target' e o conteúdo ser aberto dentro do iframe.-->
+    <iframe name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, est eum tempore dolor voluptates saepe ipsa doloribus obcaecati expedita modi, eaque iste reprehenderit ex quod fugit voluptatum nisi laudantium architecto.</p>
+        <img src='imagens/icon.ico'>"><!--o parâmetro 'srcdoc' serve para colocar conteúdo html dentro do iframe. Ps: quando um parâmetro com aspas está dentro de outro, usa-se aspas simples, assim ''.-->
         <p>Infelizmente seu navegador não é compatível com esse tipo de conteúdo.</p>
     </iframe>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nisi eum id veritatis suscipit expedita dignissimos aut delectus voluptatibus, accusamus maxime numquam ducimus ea doloremque nam vel atque placeat temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa officia laboriosam a non quos, harum voluptate odio, similique ducimus quae qui maxime impedit placeat! Commodi consectetur temporibus rem deserunt sequi!</p>
