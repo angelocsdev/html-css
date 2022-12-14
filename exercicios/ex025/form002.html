@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="5" placeholder="Usuário" autocomplete="username"> <!--"required" é usado para deixar os campos dos formulários obrigatórios. "size" é o tamanho da caixa. "placeholder" é usado para colocar um texto dentro da caixa.-->
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="12" size="5" placeholder="Senha" autocomplete="current-password"><!--"minlength" é usado para que seja exigido um número mínimo obrigatório de caracteres. "maxlength" é usado para um número máximo de caracteres. O "autocomplete" nos inputs tem mais opções do que nos forms que são apenas "on" e "off", como por exemplo: current-password, que faz com que a senha registrada do usuário usado seja sugerida.-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"><!--input do tipo 'reset' faz com que o botão apague/limpe as informações do formulário.-->
+        </p>
+    </form>
+</body>
+</html>
