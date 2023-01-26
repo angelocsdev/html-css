@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+body {
+    padding-bottom: 500px;
+}
+
+.container {
+    background-color: #eef;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    display: flex; /* O Flexbox deve ser colocado no elemento pai para que interaja com todos os filhos da tag. Como o exemplo do container. */
+
+    /* Alinhamento horizontal */
+
+    justify-content: space-between;
+
+    /* Alinhamento vertical */
+
+    align-items: center;
+    flex-wrap: wrap; /* faz a linha quebrar quando não couber mais elementos no espaçamento que foi escrito */
+}
+
+.item {
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+}
+
+.box {
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    flex-basis: 100px; /* dá um padrão de largura para todos os elementos */
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* shorthand para item */
+    flex: 1 1 50px;
+}
+
+#item-1 {
+    flex-grow: 8; /* deixa o elemento crescer o máximo possível respeitando o "flex-basis" */
+}
+
+#item-2, #item-3 {
+    flex-grow: 1;
+}
+
+#item-2 {
+    flex-basis: 100px;
+}
+
+#item-3 {
+    flex-shrink: 2;
+}
+
+/* Ordem dos itens */
+
+#item-2 {
+    order: 1;
+}
+
+#item-3 {
+    order: 2;
+}
+
+#item-1 {
+    order: 3;
+}
