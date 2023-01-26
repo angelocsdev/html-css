@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.container {
+    background-color: #333;
+    border: 1px solid red;
+    padding: 15px;
+    display: grid; /* introduzindo grid no CSS */
+    grid-template-columns: 50px auto 10%; /* número e tamanho das colunas => vertical */
+    height: 50vh;
+    grid-template-rows: 70% 30%; /* tamanho das linhas => horizontal */
+    gap: 5px; /* é usado para dar espaçamento entre as linhas e colunas */
+    grid-row-gap: 10px; /* espaçamento vertical */
+    grid-column-gap: 15px; /* espaçamento horizontal */
+}
+
+.container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}

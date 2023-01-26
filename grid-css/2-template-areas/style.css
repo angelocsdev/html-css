@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* Template area */
+
+.container {
+    background-color: #333;
+    border: 1px solid red;
+    padding: 15px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+    'header header header header' /* representação da regra */
+    'sidebar content content content' /* divisão de colunas */
+    'footer footer footer footer';
+}
+
+.container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+#header {
+    grid-area: header; /* nome do que a regra representa lá no grid-template-areas */
+}
+
+#sidebar {
+    grid-area: sidebar;
+    height: 80vh;
+}
+
+#content {
+    grid-area: content;
+    height: 80vh;
+}
+
+#footer {
+    grid-area: footer;
+}
